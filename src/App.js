@@ -1,5 +1,13 @@
-function App() {
-  return <div className="App"></div>;
-}
+import AddItem from "./components/AddItem";
+import List from "./components/List";
+
+const App = () => {
+  return (
+    <div className="app">
+      <AddItem />
+      <List />
+    </div>
+  );
+};
 
 export default App;
