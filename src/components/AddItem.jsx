@@ -27,7 +27,7 @@ const AddItem = () => {
           className="inputBox"
           placeholder="Enter a task"
           value={value}
-          onChange={(event) => setValue(event.target.value)}
+          onChange={(e) => setValue(e.target.value)}
         ></input>
         <button className="subButton" onClick={formSubmit}>
           Add

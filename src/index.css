@@ -4,6 +4,37 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.app {
+.formDiv {
   margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.inputForm {
+  display: flex;
+  align-items: center;
+}
+
+.inputBox {
+  margin: 1rem;
+  width: 12rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  border-width: thin;
+}
+
+.subButton {
+  margin: 1rem;
+  border-radius: 5px;
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  background-color: chocolate;
+  color: whitesmoke;
+}
+
+.subButton:hover {
+  transform: scale(110%);
+  background-color: rgb(162, 80, 20);
+  box-shadow: 0 0 5px chocolate;
 }
