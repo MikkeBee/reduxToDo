@@ -14,7 +14,7 @@ body {
 }
 
 .formDiv {
-  margin: 2rem;
+  margin: 2.5rem 2rem 1.5rem;
   display: flex;
   justify-content: center;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .listBox {
-  margin: 2rem 6rem;
+  margin: 1rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +58,21 @@ body {
 .itemLi {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin: 1rem;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.itemLi:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.itemContent {
+  margin-left: 1rem;
+  margin-right: 2rem;
+  flex-wrap: wrap;
 }
 
 .deleteButton {
@@ -78,25 +89,4 @@ body {
   transform: scale(110%);
   background-color: rgb(162, 80, 20);
   box-shadow: 0 0 5px chocolate;
-}
-
-.divider {
-  position: static;
-  height: 0.1rem;
-}
-
-.dividerBar {
-  content: "";
-  position: relative;
-  top: 9rem;
-  left: 10rem;
-  right: 10rem;
-  width: 70%;
-  height: 0.1rem;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    rgb(20, 20, 20),
-    transparent
-  );
 }

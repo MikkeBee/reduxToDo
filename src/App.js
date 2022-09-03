@@ -6,9 +6,6 @@ const App = () => {
   return (
     <div className="app">
       <AddItem />
-      <div className="divider">
-        <span className="dividerBar"></span>
-      </div>
       <List />
     </div>
   );

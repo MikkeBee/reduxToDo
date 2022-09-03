@@ -17,7 +17,9 @@ const TaskItem = ({ item }) => {
 
   return (
     <li className="itemLi">
-      <div key={item.id}>{item.content}</div>
+      <div className="itemContent" key={item.id}>
+        {item.content}
+      </div>
       <div>
         <button
           className="deleteButton"
