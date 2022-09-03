@@ -1,20 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import taskItem from "./taskItem";
+import TaskItem from "./TaskItem";
 
 const List = () => {
   const items = useSelector((state) => {
-    return state.content;
+    return state.todos;
   });
 
   return (
-    <div>
+    <section className="listBox">
       <ul className="tasks-list">
         {items.map((item) => (
-          <taskItem id={item.id} title={item.name} completed={item.status} />
+          <TaskItem item={item} />
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

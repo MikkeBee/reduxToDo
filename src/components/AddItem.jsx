@@ -14,7 +14,7 @@ const AddItem = () => {
       setValue("");
       return;
     }
-    dispatch(addItem({ content: value }));
+    dispatch(addItem({ todo: value }));
 
     setValue("");
   };
